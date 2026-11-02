@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contract Management prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand-area">
+    <a class="brand" href="#/search">Contract Management<small>Prototype</small></a>
+    <span class="brand-disclaimer">This header won’t be included in the platform; it is for tryout purposes only.</span>
+  </div>
+  <div class="top-right">
+    <label class="rolesel"><span>Viewing as</span><select id="roleSel" aria-label="Switch role"></select></label>
+    <button class="btn ghost sm" type="button" data-act="resetDemo">Reset demo</button>
+  </div>
+</header>
+<div class="shell">
+  <nav class="side" id="nav" aria-label="Main"></nav>
+  <main id="view" tabindex="-1"></main>
+</div>
+<div id="toasts" role="status" aria-live="polite"></div>
+<dialog id="modal"></dialog>
+
+<!-- Plain (non-module) scripts sharing one global scope; the order matters -->
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tasks-admin.js"></script>
+<script src="js/home-search.js"></script>
+<script src="js/projects-tenders.js"></script>
+<script src="js/library.js"></script>
+<script src="js/tender-pages.js"></script>
+<script src="js/documents.js"></script>
+<script src="js/exports.js"></script>
+<script src="js/tables.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
